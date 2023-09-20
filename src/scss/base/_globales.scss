@@ -1,0 +1,84 @@
+
+@use "mixins" as m;
+
+
+// primarias
+$Darkcyan: hsl(158, 36%, 37%);
+$Cream: hsl(30, 38%, 92%);
+// secundarias
+$Verydarkblue: hsl(212, 21%, 14%);
+$Darkgrayishblue: hsl(228, 12%, 48%);
+$White: hsl(0, 0%, 100%);
+
+//tipografias
+$monserrat: "Montserrat";
+$fraunces: "Fraunces";
+
+
+html {
+    font-size: 62.5%; //PARA QUE 1 REM SEA = 10PX
+    box-sizing: border-box;
+}
+
+*,
+*:before,
+*:after {
+    box-sizing: inherit; //PARA QUE EL PADDIN NO PRESENTE UN PROBLEMA
+}
+
+body {
+    font-size: 1.6rem;
+    background-color: $Cream;
+}
+
+p {
+    font-size: 2rem;
+    line-height: 1.5; //espaciado entre fila y fila
+    font-family: $monserrat;
+    color: $Darkgrayishblue
+}
+
+.contenedor {
+    width: 85%;
+    max-width: 120rem;
+    margin: 10rem auto;
+    display: grid;
+    @include m.tablet 
+    {
+        width: 45%;
+        grid-template-columns: repeat(2, 1fr) ;
+
+    }
+    border-radius: 10px 10px 10px 10px;
+
+    h1 {
+        font-size: 4.5rem;
+    }
+}
+
+a {
+    text-decoration: none;
+}
+
+h1,
+h2,
+h3 {
+    margin: 0 0 5rem 0;
+}
+
+
+
+h2 {
+    font-size: 3.6rem;
+}
+
+h3 {
+    font-size: 3rem;
+}
+
+img{
+    max-width: 100%;
+    display: block; //para que se ajusten las imagenes
+    width: 100%; 
+    height: 100%;
+}

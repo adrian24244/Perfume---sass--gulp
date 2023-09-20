@@ -1,0 +1,122 @@
+html {
+  font-size: 62.5%;
+  box-sizing: border-box;
+}
+
+*,
+*:before,
+*:after {
+  box-sizing: inherit;
+}
+
+body {
+  font-size: 1.6rem;
+  background-color: hsl(30, 38%, 92%);
+}
+
+p {
+  font-size: 2rem;
+  line-height: 1.5;
+  font-family: "Montserrat";
+  color: hsl(228, 12%, 48%);
+}
+
+.contenedor {
+  width: 85%;
+  max-width: 120rem;
+  margin: 10rem auto;
+  display: grid;
+  border-radius: 10px 10px 10px 10px;
+}
+@media (min-width: 720px) {
+  .contenedor {
+    width: 45%;
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+.contenedor h1 {
+  font-size: 4.5rem;
+}
+
+a {
+  text-decoration: none;
+}
+
+h1,
+h2,
+h3 {
+  margin: 0 0 5rem 0;
+}
+
+h2 {
+  font-size: 3.6rem;
+}
+
+h3 {
+  font-size: 3rem;
+}
+
+img {
+  max-width: 100%;
+  display: block;
+  width: 100%;
+  height: 100%;
+}
+
+.imagen {
+  border-radius: 10px 0px 0px 10px;
+}
+.imagen img {
+  border-radius: 10px 0px 0px 10px;
+}
+
+.informacion {
+  background-color: hsl(0, 0%, 100%);
+  padding: 3rem;
+  border-radius: 0px 10px 10px 0px;
+  font-family: "Fraunces";
+}
+
+.titulo-cabeza {
+  font-family: "Montserrat";
+  text-transform: uppercase;
+  letter-spacing: 7px;
+  color: hsl(228, 12%, 48%);
+}
+
+.precio {
+  color: hsl(158, 36%, 37%);
+  font-weight: 700;
+  font-size: 4rem;
+  font-family: "Fraunces";
+}
+
+.precio2 {
+  font-family: "Montserrat";
+  color: hsl(228, 12%, 48%);
+  font-size: 2rem;
+  margin-left: 2rem;
+  text-decoration: line-through;
+}
+
+.cont-boton {
+  border-radius: 10px 10px 10px 10px;
+  display: flex;
+  background-color: hsl(158, 36%, 37%);
+  justify-content: center;
+  align-items: center;
+}
+
+.boton {
+  padding: 2rem;
+  color: hsl(0, 0%, 100%);
+  font-family: "Montserrat";
+  margin-left: 2rem;
+}
+
+.carrito {
+  max-width: 100%;
+  display: block;
+  width: 7%;
+  height: 7%;
+}

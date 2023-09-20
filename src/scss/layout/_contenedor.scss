@@ -1,0 +1,75 @@
+@use '../base/mixins' as m;
+@use '../base/globales' as v;
+
+
+
+.imagen {
+    border-radius: 10px 0px 0px 10px;
+    // background-image: url("../../../images/image-product-desktop.jpg");
+    // background-size: cover;  /* Ajusta la imagen al tamaño del div */
+    // background-repeat: no-repeat;
+    // border: red solid 5px;
+    // width: 100%;
+    // height: 100%;
+    img {
+        border-radius: 10px 0px 0px 10px;
+
+    }
+}
+
+
+
+.informacion {
+    background-color: v.$White;
+    padding: 3rem;
+    border-radius: 0px 10px 10px 0px;
+    font-family: v.$fraunces;
+}
+
+.titulo-cabeza {
+    font-family: v.$monserrat;
+    text-transform: uppercase;
+    letter-spacing: 7px;
+    color: v.$Darkgrayishblue;
+}
+
+.precio {
+    color: v.$Darkcyan;
+    font-weight: 700;
+    font-size: 4rem;
+    font-family: v.$fraunces;
+}
+
+.precio2 {
+    font-family: v.$monserrat;
+    color: v.$Darkgrayishblue;
+    font-size: 2rem;
+    margin-left: 2rem;
+    text-decoration: line-through; //texto tachado
+}
+
+.cont-boton {
+    border-radius: 10px 10px 10px 10px;
+
+    display: flex;
+    // justify-content: space-between;
+    background-color: v.$Darkcyan;
+    justify-content: center;
+    align-items: center;
+}
+
+.boton {
+    // width: 30rem;   
+    padding: 2rem;
+    // margin-bottom: 3rem;
+    color: v.$White;
+    font-family: v.$monserrat;
+    margin-left: 2rem;
+}
+
+.carrito {
+    max-width: 100%;
+    display: block; //para que se ajusten las imagenes
+    width: 7%;
+    height: 7%;
+}
